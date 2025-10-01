@@ -500,7 +500,7 @@ def populate_pta_hdf5_output(
         key="height_above_ellipsoid",
         ds_name="heightAboveEllipsoid",
         ds_descr=(
-            "The height of the corner reflector above the WGS 84 reference"
+            "The height of the corner reflector above the WGS84 reference"
             " ellipsoid at the time it was surveyed"
         ),
         ds_dtype=np.float64,
