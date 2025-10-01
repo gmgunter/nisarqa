@@ -171,6 +171,38 @@ def populate_abscal_hdf5_output(
     )
 
     create_dataset_from_abscal_results(
+        key="latitude_deg",
+        ds_name="latitude",
+        ds_descr=(
+            "The geodetic latitude of the corner reflector at the time it was"
+            " surveyed."
+        ),
+        ds_dtype=np.float64,
+        ds_units="degree_north",
+    )
+
+    create_dataset_from_abscal_results(
+        key="longitude_deg",
+        ds_name="longitude",
+        ds_descr=(
+            "The longitude of the corner reflector at the time it was surveyed."
+        ),
+        ds_dtype=np.float64,
+        ds_units="degree_east",
+    )
+
+    create_dataset_from_abscal_results(
+        key="height_above_ellipsoid",
+        ds_name="heightAboveEllipsoid",
+        ds_descr=(
+            "The height of the corner reflector above the WGS 84 reference"
+            " ellipsoid at the time it was surveyed"
+        ),
+        ds_dtype=np.float64,
+        ds_units="meters",
+    )
+
+    create_dataset_from_abscal_results(
         key="velocity",
         ds_name="cornerReflectorVelocity",
         ds_descr=(
