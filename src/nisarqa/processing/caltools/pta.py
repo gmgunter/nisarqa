@@ -477,6 +477,7 @@ def populate_pta_hdf5_output(
 
     create_dataset_from_pta_results(
         key="latitude_deg",
+        grp_path=grp_path,
         ds_name="latitude",
         ds_descr=(
             "The geodetic latitude of the corner reflector at the time it was"
@@ -488,6 +489,7 @@ def populate_pta_hdf5_output(
 
     create_dataset_from_pta_results(
         key="longitude_deg",
+        grp_path=grp_path,
         ds_name="longitude",
         ds_descr=(
             "The longitude of the corner reflector at the time it was surveyed"
@@ -498,6 +500,7 @@ def populate_pta_hdf5_output(
 
     create_dataset_from_pta_results(
         key="height_above_ellipsoid",
+        grp_path=grp_path,
         ds_name="heightAboveEllipsoid",
         ds_descr=(
             "The height of the corner reflector above the WGS84 reference"
